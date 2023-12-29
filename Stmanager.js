@@ -53,7 +53,6 @@ function show(my_obj){
 	list.appendChild(tr);
 
 	delBtn.addEventListener('click',delOrder);
-
 	function delOrder(e){
 		e.preventDefault();
 		if(confirm('Delete this Item?')){
