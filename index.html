@@ -3,41 +3,39 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Stock Manager</title>
+	<title>Order Manager</title>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
 </head>
-<body class="bg-s">
+<body class="bg-light">
 	<div class="container">
-		<div id="header" class="text-center badge-primary"><h1>Stock Manager</h1></div>
+		<div id="header" class="text-center badge-primary"><h1>Order Manager</h1></div>
 		<div class="container-card">
 			<form id="form">
 
-			<div class="form-floating">
-				<input type="text" id="candy" class="form-control" placeholder="Candy Name">
-				<label for="candy">Candy Name</label>
-			</div>
+			
+				<label for="Dprice" class="h5 m-2">Price</label>
+				<input type="text" id="Dprice" class="form-control" placeholder="Dish Price">
+			
 				
-			<div class="form-floating">
-				<input type="text" class="form-control" id="description" placeholder="Description" required>
-				<label for="description" >Description</label>
-			</div>
-
-				<label id="label" for="price">Price</label>
-				<input type="number" id="price" >
-
-				<label id="label" for="amount">Amount</label>
-				<input type="number" id="amount">
-
-				<input type="submit" class="btn-success">
+			
+				<label for="Dname" class="h5 m-2">Dish Name</label>
+				<input type="text" class="form-control" id="Dname" placeholder="Dish Name">
+			
+				<label for="Dcategory" class="h5 m-2" >Category</label>
+				<select id="Dcategory" class="form-select form-control">
+					<option>Table 1</option>
+					<option>Table 2</option>
+					<option>Table 3 </option>
+					</select><br>
+			<input type="submit" class="btn btn-primary text-center btn-success mb-5">
 			</form>
-			<h2 class="text-center text-bg-warning">Stock</h2>
-	<Table class="table" id="tab">
-		<tr>
+			<h2 class="text-center bg-warning mb-0">Order List</h2>
+	<Table class="table bg-white" id="tab">
+		<tr >
 			<th class="bg-success-subtle">ID</th>
-			<th class="bg-success-subtle">Candy Name</th>
-			<th class="bg-success-subtle">Description</th>
-			<th class="bg-success-subtle">Price</th>
-			<th class="bg-success-subtle">Amount</th>
+			<th class="bg-success-subtle">Dish Price</th>
+			<th class="bg-success-subtle">Dish Name</th>
+			<th class="bg-success-subtle">Table  No.</th>
 			<th class="bg-success-subtle"></th>
 		</tr>
 	</Table>
